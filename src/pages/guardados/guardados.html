@@ -7,12 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>guardados</ion-title>
+    <ion-title>Guardados</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of historial; let i = index" (click)="abriScan()">
+      {{item.texto}}
+      <p>
+        {{item.tipo}}
+      </p>
+    </button>
+  </ion-list>
 </ion-content>
