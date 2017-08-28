@@ -23,7 +23,8 @@ export class HomePage {
     console.log("Realizando scan");
     //if(this.platform.is('cordova')){
     if(this.platform.is('core')){
-      this.historialSrv.guardarHistorial("http://www.google.com");
+      //this.historialSrv.guardarHistorial("http://www.google.com");
+      this.historialSrv.guardarHistorial("geo:-34.442345,-58.934602");
       return;
     }
 
