@@ -25,7 +25,7 @@ export class HomePage {
     if(this.platform.is('core')){
       //this.historialSrv.guardarHistorial("http://www.google.com");
       //this.historialSrv.guardarHistorial("geo:-34.442345,-58.934602");
-      this.historialSrv.guardarHistorial(`BEGIN:VCARD
+      /* this.historialSrv.guardarHistorial(`BEGIN:VCARD
 VERSION:2.1
 N:Kent;Clark
 FN:Clark Kent
@@ -34,7 +34,8 @@ TEL;HOME;VOICE:12345
 TEL;TYPE=cell:67890
 ADR;TYPE=work:;;;
 EMAIL:clark@superman.com
-END:VCARD`);
+END:VCARD`); */
+      this.historialSrv.guardarHistorial("MATMSG:TO:gaitanmarcelo@hotmail.com;BODY:esto es una prueba;SUB:Testing de mail");
       return;
     }
 

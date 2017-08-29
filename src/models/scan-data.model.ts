@@ -17,6 +17,10 @@ export  class ScanData {
         else if(texto.startsWith("BEGIN:VCARD")){
             this.tipo = "Contacto";
         }
+        else if(texto.startsWith("MATMSG")){
+            this.tipo = "Correo";
+        }
+
        
         
     }

@@ -7,11 +7,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { TabsPage, HomePage, GuardadosPage, MapaPage } from '../pages/index.pages';
 
+//plugins
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
-import { HistorialServiceProvider } from '../providers/historial-service/historial-service';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { AgmCoreModule } from '@agm/core';
 import { Contacts } from '@ionic-native/contacts';
+import { EmailComposer } from '@ionic-native/email-composer';
+
+//servicios
+import { HistorialServiceProvider } from '../providers/historial-service/historial-service';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,8 @@ import { Contacts } from '@ionic-native/contacts';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     HistorialServiceProvider,
     InAppBrowser,
-    Contacts
+    Contacts,
+    EmailComposer
   ]
 })
 export class AppModule {}
