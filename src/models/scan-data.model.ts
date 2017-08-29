@@ -14,6 +14,9 @@ export  class ScanData {
         else if(texto.startsWith("geo")){
             this.tipo = "Mapa";
         }
+        else if(texto.startsWith("BEGIN:VCARD")){
+            this.tipo = "Contacto";
+        }
        
         
     }
