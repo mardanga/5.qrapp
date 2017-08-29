@@ -87,9 +87,9 @@ export class HistorialServiceProvider {
 
     //let sp = data.replace("MATMSG:", "").split(";");
 
-    let to= sp[0];
-    let subject= sp[1];
-    let body= sp[2];
+    let to= sp[0].replace("to:","");
+    let subject= sp[1].replace("sub:","");
+    let body= sp[2].replace("body:","");
 
     this.emailComposer.isAvailable().then((available: boolean) => {
       if (available) {
